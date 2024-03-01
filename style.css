@@ -12,7 +12,7 @@
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     animation-name: body;
-    font-weight: 500;
+    font-weight: 600;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -100,8 +100,10 @@
   flex-direction: column;
 /*   background-color: green; */
   gap: 0.3rem;
-  background-color: transparent;
-   z-index: 3;
+ /*  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  */  z-index: 3;
   
 }
 .hello .anchors{
@@ -122,7 +124,6 @@
   text-decoration: none;
   color: aliceblue;
   padding: 0.5rem 0.6rem;
-  z-index: 2;
   width: 9rem;
   background-color: crimson;
   top: 1rem;
@@ -160,6 +161,7 @@ color: crimson;
   width: 100%;
   z-index: 2;
   background-color: white;
+  
   color: black;
   padding: 0.9rem;
 }
@@ -348,6 +350,7 @@ footer h5{
   padding: 0.8rem;
   flex-wrap: wrap;
   gap: 2rem;
+  
 }
 .portHeading{
   left: 0;
@@ -369,7 +372,11 @@ footer h5{
 .technical1{
   width: 18rem;
   padding: 0.6rem;
-  background-color: #17202a;
+ /*  background-color: #17202a; */
+  background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+       
   text-align: center;
   transition: 0.5s;
   scale: 0.95;
@@ -380,7 +387,6 @@ footer h5{
   color: #fff;
   border-radius: 10px;
   outline: 2px;
-  z-index: 999;
   scale: 1;
 }
 .technical1:active{
