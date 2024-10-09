@@ -778,6 +778,9 @@ input[type = submit]:hover{
      */.circle{
       display: none;
     }
+    .hello .anchors{
+      gap: 2rem;
+    }
     #navDisplay{
   display: none;
   visibility: hidden;
