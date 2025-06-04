@@ -412,6 +412,7 @@
     emailjs.sendForm('service_fvgob3i', 'template_62wq54r', this)
       .then(() => {
         alert('Message sent successfully!');
+          this.reset();
       }, (error) => {
         alert('Failed to send message: ' + error);
       });
