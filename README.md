@@ -1,4 +1,4 @@
-# Cherno B Jallow - Portfolio Website 🚀
+# Cherno B Jallow - Portfolio Website 
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://cbjtech.github.io/portfolio)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
