@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        body {
+            font-family: "Afacad Flux", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1.2rem;
+            font-variation-settings:
+            "slnt" 0;
+           /* font-family: 'Inter', sans-serif; */
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .typing-text::after {
+            content: "|";
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .section {
+            scroll-margin-top: 100px;
+        }
+        .progress-circle {
+            stroke-dasharray: 251;
+            stroke-dashoffset: 251;
+            animation: dash 1.5s ease-in-out forwards;
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: var(--dash-offset);
+            }
+        }
