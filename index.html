@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherno Basiru Jallow - AI Engineer & Researcher</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/best.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#10b981',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body class="min-h-screen bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                   <a href="#home" class="flex items-center space-x-2">
+                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-xs font-semibold tracking-widest">CBJ</span>
+                        <span class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Cherno B. Jallow</span>
+                   </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#speaking" class="nav-link">Speaking</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="images/Cherno Basiru Jallow Resume-1.pdf" class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary focus-visible:ring-offset-dark" download="Cherno-Basiru-Jallow-Resume">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-controls="mobile-menu" aria-expanded="false" id="navBar">
+                        <i class="fas fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark/95 backdrop-blur-md border-t border-gray-800">
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#experience" class="mobile-nav-link">Experience</a>
+                    <a href="#skills" class="mobile-nav-link">Skills</a>
+                    <a href="#speaking" class="mobile-nav-link">Speaking</a>
+                    <a href="#projects" class="mobile-nav-link">Projects</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <a href="images/Cherno Basiru Jallow Resume-1.pdf" class="mt-4 block px-3 py-2 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity duration-200 text-center" download="Cherno-Basiru-Jallow-Resume">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden section" aria-labelledby="hero-title">
+        <div id="vanta-bg" class="absolute inset-0 opacity-30"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+                <!-- Hero content -->
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <h1 id="hero-title" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white leading-tight">
+                        Cherno Basiru Jallow
+                    </h1>
+                    <p class="text-xs sm:text-sm uppercase tracking-[0.25em] text-secondary mb-4">
+                        AI Engineer &amp; Researcher · Building Tech Solutions for Africa
+                    </p>
+                    <div class="text-lg sm:text-xl md:text-2xl mb-4 text-gray-300 min-h-[2rem]">
+                        <span class="typing-text" data-strings='["AI Engineer &amp; Researcher", "Startup Founder", "Tech Public Speaker &amp; Educator", "YouTuber @ CBJtech"]'></span>
+                    </div>
+                    <p class="text-base sm:text-lg text-gray-300 mb-6 max-w-xl mx-auto md:mx-0">
+                        I design and build AI systems that tackle problems in healthcare, education, and communities across Africa,
+                        with a focus on computer vision, deep learning, and research you can deploy in the real world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center md:justify-start">
+                        <a href="images/Cherno Basiru Jallow Resume-1.pdf" download="Cherno-Basiru-Jallow-Resume" class="inline-flex items-center justify-center px-6 sm:px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover:opacity-90 transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-dark">
+                            Download Resume
+                        </a>
+                        <a href="#projects" class="inline-flex items-center justify-center px-6 sm:px-8 py-3 border border-white/60 text-white rounded-full font-medium hover:bg-white hover:text-dark transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-dark">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center px-6 sm:px-8 py-3 border border-secondary/70 text-secondary rounded-full font-medium hover:bg-secondary hover:text-dark transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-dark">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-300 text-sm sm:text-base">
+                        <div class="flex items-center justify-center md:justify-start space-x-2">
+                            <i data-feather="map-pin" class="w-4 h-4"></i>
+                            <span>Yundum, The Gambia 🇬🇲</span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start space-x-2">
+                            <i data-feather="mail" class="w-4 h-4"></i>
+                            <a href="mailto:jallowchernobassiru@gmail.com" class="underline-offset-4 hover:underline">jallowchernobassiru@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start space-x-3">
+                            <a href="https://www.linkedin.com/in/cherno-basiru-jallow-4834b8240/" aria-label="LinkedIn" class="social-pill">
+                                <i data-feather="linkedin" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://www.github.com/CBJtech" aria-label="GitHub" class="social-pill">
+                                <i data-feather="github" class="w-4 h-4"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@ChernoTechie" aria-label="YouTube" class="social-pill">
+                                <i data-feather="youtube" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Hero image -->
+                <div class="flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+                    <div class="relative max-w-xs sm:max-w-sm md:max-w-md">
+                        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/60 via-secondary/60 to-primary/20 blur-3xl opacity-60 animate-pulse"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-white/10 glass-card">
+                            <img 
+                              src="/images/dpOnee.png" 
+                              alt="Professional portrait of Cherno Basiru Jallow" 
+                              loading="lazy"
+                              class="responsive-img w-full h-full object-cover"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="section py-20 bg-dark" aria-labelledby="about-title">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="about-title" class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-10 md:gap-12 items-start">
+                <!-- Photo + quick facts -->
+                <aside class="space-y-6">
+                    <div class="rounded-3xl overflow-hidden border border-white/10 glass-card">
+                        <img 
+                          src="/images/WhatsApp Image 2023-12-02 at 16.21.28.jpeg" 
+                          alt="Cherno speaking at a tech event in The Gambia" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="glass-card p-5 sm:p-6 rounded-2xl">
+                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-4">Quick Facts</h3>
+                        <ul class="space-y-3 text-sm sm:text-base">
+                            <li class="flex items-start space-x-3">
+                                <span class="mt-1">🎓</span>
+                                <span>Computer Science freshman @ University of The Gambia</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="mt-1">🔬</span>
+                                <span>Prev. Data Science Intern @ MRC Unit The Gambia</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="mt-1">🎤</span>
+                                <span>Tech Speaker &amp; Community Educator</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="mt-1">📹</span>
+                                <span>YouTuber @ <a href="https://www.youtube.com/@ChernoTechie" class="text-secondary hover:underline">CBJtech</a></span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="mt-1">🌍</span>
+                                <span>Based in Yundum, The Gambia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Bio + highlights -->
+                <div class="space-y-6">
+                    <p class="text-gray-300 text-base sm:text-lg">
+                        I’m a first year Computer Science student and AI practitioner focused on building practical, deployable AI systems for healthcare, education, and community impact in The Gambia and across Africa.
+                    </p>
+                    <p class="text-gray-300 text-base sm:text-lg">
+                        My journey started at <a href="https://nusratsss.com/" class="text-secondary hover:underline">Nusrat Senior Secondary School</a>, where curiosity about technology grew into running one of the most active <a href="http://ictclub.nusratsss.com/" class="text-secondary hover:underline">ICT Clubs</a> in the country, publishing research, and mentoring younger students. After graduating highshcool, I worked as a Data Science Intern at the <a href="https://www.lshtm.ac.uk/research/units/mrc-gambia" class="text-secondary hover:underline">Medical Research Council Unit The Gambia, part of the London School of Hygiene & Tropical Medicine</a>
+                    </p>
+                    <p class="text-gray-300 text-base sm:text-lg">
+                      Today, I work on computer vision and deep learning projects, including pneumonia detection, medical imaging, and tools that help local teams access data and research more easily.
+                    </p>
+                    <p class="text-gray-300 text-base sm:text-lg">
+                        Through talks, workshops, and my YouTube channel <a href="https://www.youtube.com/@ChernoTechie" class="text-secondary hover:underline">CBJtech</a>, I share the lessons, mistakes, and wins from my journey so more young Africans can see themselves in AI and scientific research.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="glass-card p-4 sm:p-6 rounded-xl">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="award" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-sm sm:text-base">Hackathons Winner ($$ Cash prizes)</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm sm:text-base">
+                                🥇1st Place, NASA Space Apps Challenge Banjul 2025. Project Terrascope. 🏆2nd Place, MRCG AI Hackathon. Project PneumoniaNet. More details in the hackathon section below.
+                            </p>
+                        </div>
+
+                        <div class="glass-card p-4 sm:p-6 rounded-xl">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="youtube" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-sm sm:text-base">YouTube &amp; Content</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm sm:text-base">
+                                50+ videos breaking down AI/ML, coding fundamentals, and tech careers for students across Africa.
+                            </p>
+                        </div>
+                        <div class="glass-card p-4 sm:p-6 rounded-xl">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="mic" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-sm sm:text-base">Tech Speaker</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm sm:text-base">
+                                Invited speaker at Google DevFest Banjul (2x), PyCon Senegambia, UTG ICT Week, and STEM events across schools.
+                            </p>
+                        </div>
+                        <div class="glass-card p-4 sm:p-6 rounded-xl">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="book" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-sm sm:text-base">Research &amp; Publications</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm sm:text-base">
+                                Research on AI for water safety, crop diseases, and medical imaging, with preprints on Google Scholar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Initiatives -->
+                <div class="glass-card p-4 sm:p-6 md:p-8 rounded-xl mt-8 md:mt-0">
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-4">Initiatives I'm Proud Of</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="users" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                            </div>
+                            <div>
+                               <a href="https://www.hack4gambia.com/" target="_blank" class="hover:underline decoration-secondary/60">
+                                   <h4 class="font-bold text-white text-sm sm:text-base">Hack4Gambia</h4>
+                                   <p class="text-gray-300 text-xs sm:text-sm">Co-organized this hackathon to foster innovation in the Gambian tech community.</p>
+                               </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="code" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                            </div>
+                            <div>
+                              <a href="http://ictclub.nusratsss.com/about.html" target="_blank" class="hover:underline decoration-secondary/60">
+                                  <h4 class="font-bold text-white text-sm sm:text-base">Coders Hub</h4> 
+                                  <p class="text-gray-300 text-xs sm:text-sm">Co-founded a coding community at Nusrat Senior Secondary School, teaching web and Python fundamentals.</p>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="droplet" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="https://www.researchgate.net/publication/380659841_LOWEL_AI_Using_technology_and_machine_learning_algorithms_to_detect_harmful_bacteria_present_in_water" target="_blank" class="hover:underline decoration-secondary/60">
+                                    <h4 class="font-bold text-white text-sm sm:text-base">Lowel AI</h4>
+                                    <p class="text-gray-300 text-xs sm:text-sm">High-school research preprint using ML and sensors to detect harmful bacteria in water for safer communities.</p>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                    <i data-feather="cpu" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                                </div>
+                            </div>
+                            <div>
+                               <a href="https://youtu.be/iN-uc4SUz_w?si=K-0Sf79XU4emSidZ" target="_blank" class="hover:underline decoration-secondary/60">
+                                   <h4 class="font-bold text-white text-sm sm:text-base">Tech Empowerment &amp; Peer Learning</h4>
+                                   <p class="text-gray-300 text-xs sm:text-sm">Organized virtual tech study sessions at the University of The Gambia to help students master research and technical tools.</p>
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mt-6 text-xs sm:text-sm">When I'm not coding or researching, you'll find me playing sports, spending time with family, and eating way too much chocolate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition Section -->
+    <section id="awards" class="section py-20 bg-dark/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Awards & Recognition</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+                 <div class="glass-card p-4 sm:p-6 rounded-xl">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                <i data-feather="mic" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm sm:text-base mb-2">Deep Learning Indaba, Rwanda - Accepted Presenter (2025)</h3>
+                            <p class="text-gray-300 text-xs sm:text-sm">Selected to present a machine learning project at the Deep Learning Indaba, Rwanda. <br> Offered accommodation support as part of the acceptance. <br> (Unable to attend due to funding constraints.)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 sm:p-6 rounded-xl">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                <i data-feather="award" class="text-primary w-3 h-3 sm:w-4 sm:h-4"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm sm:text-base mb-2">April 2024 Best Team Member at Obentas Global</h3>
+                            <p class="text-gray-300 text-xs sm:text-sm">Recognized as the April's Best Team Member at Obentas Global Technology Company during my contract as the Lead AI Intern.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 sm:p-6 rounded-xl">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                <i data-feather="mic" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm sm:text-base mb-2">Nusrat High School ICT CLUB Presidential Award</h3>
+                            <p class="text-gray-300 text-xs sm:text-sm">Awarded by my highschool at my graduation for serving the ICT Club as President and Lead Instructor.</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+                <div class="glass-card p-4 sm:p-6 rounded-xl">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary/20 flex items-center justify-center mr-2 sm:mr-3">
+                                <i data-feather="activity" class="text-secondary w-3 h-3 sm:w-4 sm:h-4"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm sm:text-base mb-2">Independent Researcher</h3>
+                            <p class="text-gray-300 text-xs sm:text-sm">Published research preprints and conducted applied AI work during high school in The Gambia, uncommon at the secondary level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section py-20 bg-dark/95" aria-labelledby="skills-title">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="skills-title" class="text-3xl md:text-4xl font-bold text-white mb-4">Skills &amp; Expertise</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Programming & Tools -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+                        <i data-feather="code" class="mr-2 text-primary w-4 h-4 sm:w-5 sm:h-5"></i> Programming &amp; Tools
+                    </h3>
+                    <div class="badge-group">
+                        <span class="skill-badge"><span class="icon">🐍</span>Python</span>
+                        <span class="skill-badge"><span class="icon">🧑‍💻</span>JavaScript</span>
+                        <span class="skill-badge"><span class="icon">⚙️</span>C++</span>
+                        <span class="skill-badge"><span class="icon">☕</span>Java</span>
+                        <span class="skill-badge"><span class="icon">⚡️</span>PyTorch</span>
+                        <span class="skill-badge"><span class="icon">🔍</span>Scikit-learn</span>
+                        <span class="skill-badge"><span class="icon">👁️</span>OpenCV</span>
+                        <span class="skill-badge"><span class="icon">📊</span>Pandas</span>
+                        <span class="skill-badge"><span class="icon">🔧</span>Git &amp; GitHub</span>
+                        <span class="skill-badge"><span class="icon">🌐</span>HTML &amp; CSS</span>
+                    </div>
+                </div>
+
+                <!-- AI & ML -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+                        <i data-feather="cpu" class="mr-2 text-secondary w-4 h-4 sm:w-5 sm:h-5"></i> AI &amp; Machine Learning
+                    </h3>
+                    <div class="badge-group">
+                        <span class="skill-badge"><span class="icon">🧠</span>Deep Learning</span>
+                        <span class="skill-badge"><span class="icon">👁️</span>Computer Vision</span>
+                        <span class="skill-badge"><span class="icon">🧬</span>CNNs</span>
+                        <span class="skill-badge"><span class="icon">🔁</span>Transfer Learning</span>
+                        <span class="skill-badge"><span class="icon">📈</span>Model Evaluation</span>
+                        <span class="skill-badge"><span class="icon">🧹</span>Data Preprocessing</span>
+                    </div>
+                </div>
+
+                <!-- Research & Data -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+                        <i data-feather="bar-chart-2" class="mr-2 text-primary w-4 h-4 sm:w-5 sm:h-5"></i> Research &amp; Data
+                    </h3>
+                    <div class="badge-group">
+                        <span class="skill-badge"><span class="icon">📊</span>Data Analysis</span>
+                        <span class="skill-badge"><span class="icon">🧮</span>Scientific Computing</span>
+                        <span class="skill-badge"><span class="icon">✍️</span>Technical Writing</span>
+                        <span class="skill-badge"><span class="icon">📓</span>Jupyter Notebooks</span>
+                        <span class="skill-badge"><span class="icon">🔬</span>Research Methods</span>
+                    </div>
+                </div>
+
+                <!-- Other Skills & Languages -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+                            <i data-feather="mic" class="mr-2 text-secondary w-4 h-4 sm:w-5 sm:h-5"></i> Speaking &amp; Leadership
+                        </h3>
+                        <div class="badge-group">
+                            <span class="skill-badge"><span class="icon">🎤</span>Public Speaking</span>
+                            <span class="skill-badge"><span class="icon">👨‍🏫</span>Teaching</span>
+                            <span class="skill-badge"><span class="icon">💬</span>Technical Communication</span>
+                            <span class="skill-badge"><span class="icon">🧭</span>Project Leadership</span>
+                            <span class="skill-badge"><span class="icon">🤝</span>Mentorship</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6 flex items-center">
+                            <i data-feather="globe" class="mr-2 text-primary w-4 h-4 sm:w-5 sm:h-5"></i> Languages
+                        </h3>
+                        <div class="badge-group">
+                            <span class="skill-badge"><span class="icon">🌍</span>English</span>
+                            <span class="skill-badge"><span class="icon">🌍</span>Fula</span>
+                            <span class="skill-badge"><span class="icon">🌍</span>Wolof</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking & Impact Section -->
+    <section id="speaking" class="section py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Speaking &amp; Impact</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    Talks, workshops, and events where I share my journey in AI, research, and building tech from The Gambia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- DevFest 2025 -->
+             
+                <article class="glass-card rounded-2xl overflow-hidden flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=N_1G_aGJN7U&t=1839s" target="_blank" rel="noopener noreferrer">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/becomingg.png" 
+                          alt="Cherno delivering a live coding session at Google DevFest Banjul 2025" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+            
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Becoming an AI Engineer in Africa: Live Coding at DevFest
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-1">Google DevFest Banjul 2025</p>
+                        <p class="text-sm text-gray-400 mb-3">Talk + live coding demo on breaking into AI from The Gambia.</p>
+                        <p class="text-xs text-gray-500 mt-auto">2025</p>
+                    </div>
+                      </a>
+                </article>
+                   
+
+                <!-- PyCon Senegambia -->
+                <article class="glass-card rounded-2xl overflow-hidden flex flex-col">
+                 <a href="https://www.youtube.com/watch?v=0duywa6tky8&t=1s" target="_blank" rel="noopener noreferrer">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/pyconone.png" 
+                          alt="Cherno speaking at PyCon Senegambia 2025" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Python for Deep Learning &amp; Research
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-1">PyCon Senegambia 2025</p>
+                        <p class="text-sm text-gray-400 mb-3">Session on using Python, NumPy, and PyTorch for scientific discovery.</p>
+                        <p class="text-xs text-gray-500 mt-auto">2025</p>
+                    </div>
+                     </a>
+                </article>
+          <!-- UTG ICT Week -->
+                <article class="glass-card rounded-2xl overflow-hidden flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=12oXQQVcM5o&t=128s" target="_blank" rel="noopener noreferrer">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/PneumoOne.jpg" 
+                          alt="Pneumonia detection demo at UTG ICT Week 2025" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            AI for Healthcare: Pneumonia Detection Demo
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-1">University of The Gambia ICT Week 2025</p>
+                        <p class="text-sm text-gray-400 mb-3">Live demo of PneumoniaNet for childhood pneumonia screening.</p>
+                        <p class="text-xs text-gray-500 mt-auto">2025</p>
+                    </div>
+                    </a>
+                </article>
+                
+                <!-- OIC Conference 2025 -->
+                <article class="glass-card rounded-2xl overflow-hidden flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=YJoyBul1LrU&t=2s" target="_blank" rel="noopener noreferrer">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/oicConOne.jpeg" 
+                          alt="Cherno at the OIC Conference 2025" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Cherno and ITCA Vets at the OIC Conference
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-1">ITCA Vets OIC Conference 2025</p>
+                        <p class="text-sm text-gray-400 mb-3">Presenting our PneumoniaNet hackathon Project made for low-resource settings.</p>
+                        <p class="text-xs text-gray-500 mt-auto">2025</p>
+                    </div>
+                    </a>
+                </article>
+
+    
+
+                <!-- STEM Career Talks -->
+                <article class="glass-card rounded-2xl overflow-hidden flex flex-col">
+                    <a href="https://www.youtube.com/watch?v=QBEVFJ4laSc" target="_blank" rel="noopener noreferrer">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/roboticsICT.jpg" 
+                          alt="STEM career talk at Nusrat Senior Secondary School" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            STEM Career Talks &amp; Club Sessions
+                        </h3>
+                        <p class="text-sm text-gray-300 mb-1">Nusrat Senior Secondary School &amp; partner clubs</p>
+                        <p class="text-sm text-gray-400 mb-3">Inspired 250+ students through ICT club leadership and STEM outreach.</p>
+                        <p class="text-xs text-gray-500 mt-auto">2024</p>
+                    </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Professional Experience</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 h-full w-0.5 bg-gray-700 transform -translate-x-1/2 hidden md:block"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-8 md:space-y-16">
+                    <!-- Item 1 -->
+                    <div class="relative md:flex justify-between">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                                            <i data-feather="youtube" class="text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                      <a href="https://www.youtube.com/@ChernoTechie" target="_blank">  <h3 class="font-bold text-white">YouTuber | CBJtech</h3>
+                                        <p class="text-secondary text-sm mb-2">January 2023 - Present</p>
+                                        <p class="text-gray-300 text-sm">Creating content on AI/ML projects, deep learning, coding tips, tech life, research journey, student motivation, and self-taught CS</p>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 mt-6"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative md:flex justify-between">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block absolute left-1/2 w-4 h-4 bg-secondary rounded-full transform -translate-x-1/2 mt-6"></div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-3">
+                                            <i data-feather="activity" class="text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white">Data Science/AI Intern | MRC Unit The Gambia at LSHTM</h3>
+                                        <p class="text-secondary text-sm mb-2">March 2025 - Present</p>
+                                        <ul class="text-gray-300 text-sm space-y-2">
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Developed PyTorch-based CNN classifier for cats vs dogs (85% accuracy on 25K images)</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Designed pneumonia detection model using Fastai and transfer learning on 5000+ X-ray dataset</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Built a complete neural network from scratch in NumPy and python. Download my CV for more insights on what I did at MRCG.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative md:flex justify-between">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                                            <i data-feather="briefcase" class="text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white">Lead AI/ML Intern | OBENTaS Global</h3>
+                                        <p class="text-secondary text-sm mb-2">February 2024 - February 2025</p>
+                                        <ul class="text-gray-300 text-sm space-y-2">
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Built music taste prediction system using Python, scikit-learn, and pandas</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Won April 2024 Best Team Member Award</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Conducted research on e-learning platform implementation</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 mt-6"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="relative md:flex justify-between">
+                        <div class="md:w-5/12"></div>
+                        <div class="hidden md:block absolute left-1/2 w-4 h-4 bg-secondary rounded-full transform -translate-x-1/2 mt-6"></div>
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-3">
+                                            <i data-feather="users" class="text-secondary"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white">ICT Club President & Lead Instructor | Nusrat High School</h3>
+                                        <p class="text-secondary text-sm mb-2">July 2023 - July 2024</p>
+                                        <ul class="text-gray-300 text-sm space-y-2">
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Led 150+ active members, organized inter-class competitions</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Raised GMD 10,000+ for tech trips, co-founded Coders Hub</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Instructed 50+ students weekly on coding, web development, MS Office</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="relative md:flex justify-between">
+                        <div class="md:w-5/12 md:pr-8 md:text-right">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                                            <i data-feather="mic" class="text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-white">Keynote Speaker | Various Tech Events</h3>
+                                        <p class="text-secondary text-sm mb-2">March 2023 - Present</p>
+                                        <ul class="text-gray-300 text-sm space-y-2">
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Delivered talks at Google DevFest Banjul (2024 & 2025) on AI, deepfake technology, and student innovation.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Spoke at PyCon Senegambia 2025 on deep learning and Python for scientific discovery.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Presented a Fastai pneumonia detection model at UTG ICT Week 2025.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-feather="check" class="text-primary w-4 h-4 mr-2 mt-0.5 flex-shrink-0"></i>
+                                                <span>Delivered STEM talks at Nusrat Senior Secondary School, inspiring 250+ students.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2 mt-6"></div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Education -->
+    <section id="research" class="section py-20 bg-dark/95" aria-labelledby="research-title">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="research-title" class="text-3xl md:text-4xl font-bold text-white mb-4">Research &amp; Education</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    Selected publications and the academic path behind my work in AI, computer vision, and applied research.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-10 lg:gap-16 items-start">
+                <!-- Publications -->
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                        <i data-feather="file-text" class="w-4 h-4 mr-2 text-primary"></i> Publications &amp; Preprints
+                    </h3>
+                    <div class="space-y-4">
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <h4 class="text-sm sm:text-base font-semibold text-white mb-1">
+                                Lowel AI: Using Machine Learning and Sensors to Detect Harmful Bacteria in Water
+                            </h4>
+                            <p class="text-xs text-gray-400 mb-2">Biores Scientia · 2024</p>
+                            <p class="text-sm text-gray-300 mb-3">
+                                Early research on leveraging ML and low-cost sensors to support safe drinking water in low-resource settings.
+                            </p>
+                            <a href="https://bioresscientia.com/article/lowel-ai-using-machine-learning-algorithms-and-sensors-to-detect-harmful-bacteria-present-in-water" target="_blank" class="inline-flex items-center text-secondary text-sm hover:underline">
+                                View publication <i data-feather="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </article>
+
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <h4 class="text-sm sm:text-base font-semibold text-white mb-1">
+                                Computer Vision for Crop Diseases in Gambian Farms (Preprint)
+                            </h4>
+                            <p class="text-xs text-gray-400 mb-2">Preprint · 2025</p>
+                            <p class="text-sm text-gray-300 mb-3">
+                                Ongoing work exploring CNN-based models to detect crop diseases early and support local farmers.
+                            </p>
+                            <a href="https://www.researchsquare.com/article/rs-6463751/v1" target="_blank" class="inline-flex items-center text-secondary text-sm hover:underline">
+                                Read preprint <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </article>
+
+                        <article class="glass-card rounded-2xl p-5 sm:p-6">
+                            <h4 class="text-sm sm:text-base font-semibold text-white mb-1">
+                               Research Publications and Preprints
+                            </h4>
+                            <p class="text-xs text-gray-400 mb-2">Research journey summary · 2024-2025</p>
+                            <p class="text-sm text-gray-300 mb-3">
+                                See Google Scholar for full list and details of my research journey from highschool to date.
+                            </p>
+                            <a href="https://scholar.google.com/citations?user=Hh7diHkAAAAJ&hl=en" target="_blank" class="inline-flex items-center text-secondary text-sm hover:underline">
+                                View Profile <i data-feather="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <aside>
+                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                        <i data-feather="book-open" class="w-4 h-4 mr-2 text-secondary"></i> Education
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="glass-card rounded-2xl p-5 sm:p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <h4 class="text-sm sm:text-base font-semibold text-white">
+                                    BSc. (Hons) of Computer Science
+                                </h4>
+                                <span class="text-xs text-gray-400">2025 – 2029</span>
+                            </div>
+                            <p class="text-sm text-gray-300 mb-1">
+                                University of The Gambia
+                            </p>
+                            <p class="text-xs text-gray-400">
+                                Classes: Computer Programming I, Calculus II, Programming Logic and Design, Introduction to I.C.T, Introduction to Computing & Information Systems.
+                            </p>
+                        </div>
+
+                        <div class="glass-card rounded-2xl p-5 sm:p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <h4 class="text-sm sm:text-base font-semibold text-white">
+                                    High School Diploma
+                                </h4>
+                                <span class="text-xs text-gray-400">2021 – 2024</span>
+                            </div>
+                            <p class="text-sm text-gray-300 mb-1">
+                                Nusrat Senior Secondary School
+                            </p>
+                            <p class="text-xs text-gray-400">
+                                Subjects: Physics, Chemistry, Further Mathematics, Mathematics, Auto Mechanics, Applied Electricity, ICT, English Language, Civic Education.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Hackathons -->
+    <section id="projects" class="section py-20 bg-dark/95" aria-labelledby="projects-title">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="projects-title" class="text-3xl md:text-4xl font-bold text-white mb-4">Projects &amp; Hackathons</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    A selection of AI, research, and data projects — with a focus on impact in healthcare, cities, and education.
+                    Visit my <a href="https://www.github.com/CBJtech" class="text-secondary hover:underline">GitHub profile</a> for more.
+                </p>
+            </div>
+
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                   <!-- DalasiDash -->
+                <article class="group relative overflow-hidden rounded-2xl shadow-lg glass-card flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/dalView.png" 
+                          alt="DalasiDash" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-white text-xl font-semibold">DalasiDash</h3>
+                            <span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Launch date: 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-2">Mobile-first tool for businesses</p>
+                        <p class="text-sm text-gray-400 mb-4">
+                            DalasiDash is an in-development product. Simple, and offline-friendly. currently in private development, with a limited demo available on request.
+                        </p>
+                        <div class="badge-group mb-4">
+                            <span class="skill-badge"><span class="icon">⚛️</span>React</span>
+                            <span class="skill-badge"><span class="icon">🟦</span>TypeScript</span>
+                            <span class="skill-badge"><span class="icon">🐘</span>PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto text-sm">
+                           <!-- <a href="#" class="text-secondary hover:underline inline-flex items-center">Preprint<i data-feather="arrow-right" class="w-4 h-4 ml-1"></i></a> -->
+                            <span class="text-secondary hover:underline inline-flex items-center">Status: 🚧 In Development · 🔒 Private Repo · Demo on Request</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- PneumoniaNet -->
+                <article class="group relative overflow-hidden rounded-2xl shadow-lg glass-card flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/firstPnem.jpeg" 
+                          alt="PneumoniaNet interface showing X-ray classification results" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-white text-xl font-semibold">PneumoniaNet</h3>
+                            <span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">Oct 2025</span>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-2">🥈 2nd Place, MRCG Hackathon 2025</p>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Lightweight CNN for 3-class childhood pneumonia screening, optimized for low-resource clinics.
+                        </p>
+                        <div class="badge-group mb-4">
+                            <span class="skill-badge"><span class="icon">💻</span>Python</span>
+                            <span class="skill-badge"><span class="icon">🧠</span>PyTorch</span>
+                            <span class="skill-badge"><span class="icon">👁️</span>CNN</span>
+                            <span class="skill-badge"><span class="icon">📊</span>Grad-CAM</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto text-sm">
+                            <a href="https://www.youtube.com/watch?v=Zfr9Q4CqrWQ&t=3s" target="_blank" class="text-secondary hover:underline inline-flex items-center">Watch on Youtube<i data-feather="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                           <!-- <a href="#" class="text-secondary hover:underline inline-flex items-center">Demo<i data-feather="play" class="w-4 h-4 ml-1"></i></a> -->
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Data Pathways to Healthy Cities -->
+                <article class="group relative overflow-hidden rounded-2xl shadow-lg glass-card flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/NASA_Space_Apps_Champions_d00dc46f-e884-417d-b769-0e233dc3f3d1.png" 
+                          alt="Dashboard visualizing NASA satellite data for urban planning" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-white text-xl font-semibold">Data Pathways to Healthy Cities</h3>
+                            <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded-full">Oct 2025</span>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-2">🥇 1st Place, NASA Space Apps Banjul</p>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Urban planning dashboard built with NASA satellite data to support climate-aware decisions.
+                        </p>
+                        <div class="badge-group mb-4">
+                            <span class="skill-badge"><span class="icon">💻</span>Python</span>
+                            <span class="skill-badge"><span class="icon">🛰️</span>NASA Data</span>
+                            <span class="skill-badge"><span class="icon">📊</span>Data Viz</span>
+                            <span class="skill-badge"><span class="icon">🌐</span>Full Stack</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto text-sm">
+                            <a href="https://itca-vets-nasa.vercel.app/" target="_blank" class="text-secondary hover:underline inline-flex items-center">Live Demo<i data-feather="external-link" class="w-4 h-4 ml-1"></i></a>
+                           <!-- <a href="#" class="text-secondary hover:underline inline-flex items-center">GitHub<i data-feather="arrow-right" class="w-4 h-4 ml-1"></i></a> -->
+                        </div>
+                    </div>
+                </article>
+
+               
+             
+                <!-- Cats vs Dogs Classifier -->
+                <article class="group relative overflow-hidden rounded-2xl shadow-lg glass-card flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/CNN_Cat_Vs_Dog_bc1aafc4-2a47-4dae-bdfe-e855cdd800a5.png" 
+                          alt="Cats vs dogs classifier interface" 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-white text-xl font-semibold">Cats vs Dogs Classifier</h3>
+                            <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded-full">2025</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            PyTorch CNN trained on 25K images with Grad-CAM visualizations to explain model decisions.
+                        </p>
+                        <div class="badge-group mb-4">
+                            <span class="skill-badge"><span class="icon">🧠</span>PyTorch</span>
+                            <span class="skill-badge"><span class="icon">📊</span>Grad-CAM</span>
+                            <span class="skill-badge"><span class="icon">🐾</span>Image Classification</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto text-sm">
+                            <a href="https://huggingface.co/spaces/CBJtech/dogsvscats" target="_blank" class="text-secondary hover:underline inline-flex items-center">Hugging Face<i data-feather="external-link" class="w-4 h-4 ml-1"></i></a>
+                           <!-- <a href="#" class="text-secondary hover:underline inline-flex items-center">GitHub<i data-feather="arrow-right" class="w-4 h-4 ml-1"></i></a> -->
+                        </div>
+                    </div>
+                </article>
+
+                 <!-- Hack4Gambia Finals -->
+                <article class="group relative overflow-hidden rounded-2xl shadow-lg glass-card flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img 
+                          src="/images/hackthumb.png" 
+                          alt="Hack4Gambia Finals " 
+                          loading="lazy"
+                          class="responsive-img w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-white text-xl font-semibold">Hack4Gambia</h3>
+                            <span class="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">2025</span>
+                        </div>
+                        <p class="text-sm text-gray-300 mb-2"> Presentations, Awards, Pycon Senegambia Raffle & Inspiring Moments</p>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Co-organized this hackathon that brought together freelancers, highschool and university students, to foster innovation in The Gambian tech community>
+                        <div class="badge-group mb-4">
+                            <span class="skill-badge"><span class="icon">✨</span>Project Presentations</span>
+                            <span class="skill-badge"><span class="icon">🏆 </span>Awards</span>
+                            <span class="skill-badge"><span class="icon">🎁 </span>PyCon Senegambia raffle</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto text-sm">
+                            <a href="https://youtu.be/DktMHVy_eZY" target="_blank" class="text-secondary hover:underline inline-flex items-center">Watch video<i data-feather="external-link" class="w-4 h-4 ml-1"></i></a>
+                          <!--  <a href="#" class="text-secondary hover:underline inline-flex items-center">GitHub<i data-feather="arrow-right" class="w-4 h-4 ml-1"></i></a> -->
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">Whether you're looking for a keynote speaker, collaborating on research, or just want to chat about AI and tech - I'd love to hear from you!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                                <i data-feather="user" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Name</h4>
+                                <p>Cherno Basiru Jallow</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4">
+                                <i data-feather="phone" class="text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Phone</h4>
+                                <p>+220-787-8796</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                                <i data-feather="map-pin" class="text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Location</h4>
+                                <p>Yundum, The Gambia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-4">
+                                <i data-feather="mail" class="text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-white">Email</h4>
+                                <a href="mailto: jallowchernobassiru@gmail.com"> <p>jallowchernobassiru@gmail.com</p> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mt-12 mb-6">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.github.com/CBJtech" class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-200">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cherno-basiru-jallow-4834b8240/" class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-200">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ChernoTechie" class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-200">
+                            <i data-feather="youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/iam__cherno/" class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white hover:opacity-90 transition-opacity duration-200">
+                            <i data-feather="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Send Me a Message</h3>
+                    <form>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-medium hover:opacity-90 transition-opacity duration-200 flex items-center justify-center">
+                                    Send Message <i data-feather="send" class="w-4 h-4 ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark/90 border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    Copyright © 2025 Cherno B Jallow (CBJtech) - All rights reserved
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-200">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-200">About</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-200">Skills</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition-colors duration-200">Experience</a>
+                    <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+  (function(){
+    emailjs.init("bjwKoDqRP3p9HwxqF"); 
+  })();
+
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_fvgob3i', 'template_62wq54r', this)
+      .then(() => {
+        alert('Message sent successfully!');
+          this.reset();
+      }, (error) => {
+        alert('Failed to send message: ' + error);
+          this.reset();
+      });
+  });
+</script>
+
+</body>
+</html>

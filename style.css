@@ -1,0 +1,377 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body {
+  font-family: "Afacad Flux", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem; /* 18px base */
+  line-height: 1.7; /* Better readability */
+  font-variation-settings: "slnt" 0;
+  background-color: #0f172a;
+  color: #E5E7EB; /* Lighter gray for better contrast */
+}
+
+/* Typography - Headings */
+h1 {
+  font-size: 3.5rem; /* 56px */
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF; /* Pure white */
+}
+
+h2 {
+  font-size: 2.75rem; /* 44px */
+  font-weight: 700;
+  line-height: 1.3;
+  color: #FFFFFF; /* Pure white */
+}
+
+h3 {
+  font-size: 2rem; /* 32px */
+  font-weight: 600;
+  line-height: 1.4;
+  color: #FFFFFF; /* Pure white */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  line-height: 1.5;
+  color: #FFFFFF; /* Pure white */
+}
+
+/* Body text paragraphs */
+p {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.7;
+  color: #E5E7EB; /* Lighter gray for better contrast */
+}
+
+/* Mobile Typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* 16px on mobile */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* 40px on mobile */
+  }
+  
+  h2 {
+    font-size: 2rem; /* 32px on mobile */
+  }
+  
+  h3 {
+    font-size: 1.75rem; /* 28px on mobile */
+  }
+  
+  h4 {
+    font-size: 1.25rem; /* 20px on mobile */
+  }
+  
+  p {
+    font-size: 1rem; /* 16px on mobile */
+  }
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 32px; /* Consistent card padding */
+}
+
+/* Mobile card padding */
+@media (max-width: 768px) {
+  .glass-card {
+    padding: 24px; /* Slightly reduced on mobile */
+  }
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.section {
+  scroll-margin-top: 96px;
+  margin-bottom: 80px; /* More breathing room between sections */
+}
+
+/* Mobile section spacing */
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 48px; /* Reduced spacing on mobile */
+  }
+}
+
+.progress-circle {
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: dash 1.5s ease-in-out forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: var(--dash-offset);
+  }
+}
+
+/* Reusable utility styles */
+.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Basic nav/link styling helpers (augmented by Tailwind classes in markup) */
+.nav-link {
+  font-size: 0.95rem;
+}
+
+/* Mobile Navigation - CRITICAL FIX */
+@media (max-width: 768px) {
+  #mobile-menu {
+    position: fixed !important;
+    top: 64px !important;
+    right: -100% !important;
+    width: 100% !important;
+    height: calc(100vh - 64px) !important;
+    background: rgba(10, 38, 71, 0.98) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-top: 2rem !important;
+    transition: right 0.3s ease !important;
+    z-index: 40 !important;
+    overflow-y: auto !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* When menu is visible (not hidden) */
+  #mobile-menu:not(.hidden) {
+    right: 0 !important;
+    display: flex !important;
+  }
+  
+  /* Override Tailwind's hidden class when menu should be visible */
+  #mobile-menu.hidden {
+    right: -100% !important;
+    display: none !important;
+  }
+  
+  #mobile-menu > div {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    gap: 0 !important;
+  }
+  
+  /* Override Tailwind space-y utility for mobile menu */
+  #mobile-menu .space-y-1,
+  #mobile-menu .space-y-2,
+  #mobile-menu .space-y-3,
+  #mobile-menu .space-y-4 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  
+  #mobile-menu .space-y-1 > *,
+  #mobile-menu .space-y-2 > *,
+  #mobile-menu .space-y-3 > *,
+  #mobile-menu .space-y-4 > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .mobile-nav-link {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 1rem 1.5rem !important;
+    margin: 0 !important;
+    font-size: 1.125rem !important;
+    min-height: 44px !important;
+    min-width: 100% !important;
+    color: #E5E7EB !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #FFFFFF !important;
+  }
+  
+  /* Mobile menu download button */
+  #mobile-menu a[download] {
+    display: block !important;
+    width: calc(100% - 3rem) !important;
+    margin: 1rem 1.5rem !important;
+    text-align: center !important;
+    padding: 16px 32px !important;
+    min-height: 44px !important;
+  }
+}
+
+.social-pill {
+  border-radius: 9999px;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px !important; /* Increased padding */
+  border-radius: 9999px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  font-size: 0.95rem !important; /* Increased from 0.75rem to 15px */
+  color: #e5e7eb;
+  gap: 0.5rem;
+  min-height: 44px; /* Minimum touch target */
+}
+
+.skill-badge .icon,
+.skill-badge i,
+.skill-badge svg {
+  font-size: 1.1rem !important; /* 18px - larger icons */
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+  color: #6366f1;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px !important; /* Increased from 0.5rem to 12px */
+}
+
+/* Skills section category headings */
+#skills h3,
+#skills .text-lg,
+#skills .text-xl {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+}
+
+#skills h3 i,
+#skills h3 svg,
+#skills .text-lg i,
+#skills .text-xl i {
+  font-size: 1.5rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* Text contrast improvements - ensure all text elements use proper colors */
+body p,
+body .text-gray-300,
+body .text-gray-400,
+body .text-gray-200,
+section p,
+section .text-gray-300 {
+  color: #E5E7EB !important; /* Override Tailwind grays with lighter gray */
+}
+
+/* Ensure headings are white */
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .text-white,
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: #FFFFFF !important;
+}
+
+/* Better spacing utilities */
+.mb-section {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .mb-section {
+    margin-bottom: 48px;
+  }
+}
+
+/* Button Styling - Download Resume buttons specific fix */
+nav a[download],
+.hero-cta a[download],
+a[href*=".pdf"][download] {
+  padding: 14px 28px !important; /* EXACT equal padding */
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.5;
+}
+
+/* Remove any conflicting padding from child elements inside Download Resume buttons */
+nav a[download] *,
+.hero-cta a[download] *,
+a[href*=".pdf"][download] * {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Initiatives Section - Text Size Fixes */
+/* Target "Initiatives I'm Proud Of" section heading specifically */
+#about .glass-card h3 {
+  font-size: 1.5rem !important; /* 24px - Section heading */
+}
+
+/* Initiative titles (Hack4Gambia, Coders Hub, Lowel AI, Tech Empowerment) */
+#about .glass-card h4,
+#about .glass-card .font-bold.text-white {
+  font-size: 1.125rem !important; /* 18px - Initiative titles */
+  line-height: 1.5;
+}
+
+/* Initiative descriptions */
+#about .glass-card .text-gray-300.text-xs,
+#about .glass-card .text-gray-300.text-sm {
+  font-size: 0.95rem !important; /* 15px - Initiative descriptions */
+  line-height: 1.6 !important;
+}
+
+/* Spacing between initiative items */
+#about .glass-card .space-y-4 > * {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Global focus outline if any element is missing Tailwind focus utilities */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Removed global display: inline-flex and min-width rules that break layout */
+/* Touch targets are handled by specific selectors where needed */
