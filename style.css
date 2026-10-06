@@ -1002,6 +1002,24 @@ a.nav-cta.btn {
   color: var(--text-muted);
 }
 
+.recognition-item--photo {
+  align-items: start;
+}
+
+.recognition-item--photo .recognition-detail + .recognition-detail {
+  margin-top: 0.35rem;
+}
+
+@media (min-width: 640px) {
+  .recognition-item--photo {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.recognition-item--photo:hover .speaking-thumb img {
+  transform: scale(1.02);
+}
+
 /* Community & Leadership */
 .community-list {
   display: flex;
