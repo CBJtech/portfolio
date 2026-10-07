@@ -362,6 +362,10 @@ a.nav-cta.btn {
 }
 
 @media (max-width: 767px) {
+  .hero-actions {
+    justify-content: center;
+  }
+
   .hero-portrait {
     max-width: 320px;
     justify-self: start;
